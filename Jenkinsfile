@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('test code') {
       steps {
         sh 'python3 app.py'
       }
