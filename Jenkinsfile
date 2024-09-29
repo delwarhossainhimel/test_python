@@ -5,6 +5,10 @@ pipeline {
       steps {
         sh 'ls'
       }
+    stage('Python Version Check') {
+      steps {
+        sh 'python3 --version'
+      }
     }
 
   }
