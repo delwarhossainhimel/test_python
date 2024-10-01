@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Python Version Check') {
       steps {
-        sh 'pwd'
+        sh 'cat /etc/release*'
       }
     }
 
