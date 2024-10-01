@@ -1,5 +1,5 @@
 pipeline {
-  agent  { label 'agent_python' }
+  agent  { label 'test' }
   stages {
     stage('test code') {
       steps {
