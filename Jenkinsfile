@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Python Version Check') {
       steps {
-        sh "cat /etc/*release"
+        sh "python3 --version"
       }
     }
 
