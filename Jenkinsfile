@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Python Version Check') {
       steps {
-        sh "python3 --version"
+        sh "python appy.py"
       }
     }
 
