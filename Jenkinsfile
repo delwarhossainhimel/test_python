@@ -1,14 +1,17 @@
 pipeline {
-  agent  { label 'agent_python' }
+  agent {
+    label 'agent_python'
+  }
   stages {
     stage('test code') {
       steps {
         sh 'ls'
       }
     }
-    stage('Python Version Check') {
+
+    stage('update') {
       steps {
-        sh "python app.py"
+        sh 'yum update -y'
       }
     }
 
